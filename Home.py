@@ -12,7 +12,7 @@ st.markdown(
 )
 
 # Center the GIF using columns
-gif_path = r"fyp\dashboard\angry-2498.gif"
+gif_path = r"angry-2498.gif"
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.image(gif_path, use_container_width=True)
