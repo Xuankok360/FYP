@@ -6,3 +6,5 @@ joblib>=1.1
 scikit-learn>=1.0
 torch>=1.12
 skorch>=0.11
+ccxt>=3.0.0
+plotly>=5.0
