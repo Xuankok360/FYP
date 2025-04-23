@@ -57,16 +57,16 @@ torch.serialization.add_safe_globals([
 # Global file paths
 # -------------------------------------------------------------------------
 INTERVAL_FILES = {
-    "5min": r"app\Interval\5min_oi_pi.csv",
-    "1h":   r"app\Interval\1h_oi_pi.csv",
-    "1d":   r"app\Interval\1d_oi_pi.csv"
+    "5min": "Interval/5min_oi_pi.csv",
+    "1h":   "app/Interval/1h_oi_pi.csv",
+    "1d":   "app/Interval/1d_oi_pi.csv"
 }
 
 MODEL_FILES = {
-    "ensemble5min":           r"app\SelectedModel\ensemble5min_60%.pkl",
-    "LogisticRegressionML1h": r"app\SelectedModel\best_log_reg_model_1h_51%.pkl",
-    "RandomForest1h":         r"app\SelectedModel\best_rf_model_1h_51%.pkl",
-    "RandomForest5min":       r"app\SelectedModel\best_rf_model_5min_58%.pkl"
+    "ensemble5min":           "app/SelectedModel/ensemble5min_60%.pkl",
+    "LogisticRegressionML1h": "app/SelectedModel/best_log_reg_model_1h_51%.pkl",
+    "RandomForest1h":         "app/SelectedModel/best_rf_model_1h_51%.pkl",
+    "RandomForest5min":       "app/SelectedModel/best_rf_model_5min_58%.pkl"
 }
 
 # -------------------------------------------------------------------------

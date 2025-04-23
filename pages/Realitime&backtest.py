@@ -518,7 +518,7 @@ def get_combined_data(selected_interval):
 
 # --------------------- Main Simulation Logic ---------------------
 def run_simulation():
-    csv_folder = r"app\Interval"
+    csv_folder = "Interval"
     if not os.path.exists(csv_folder):
         os.makedirs(csv_folder)
     
