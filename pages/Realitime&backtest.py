@@ -107,7 +107,7 @@ simulation_mode = st.sidebar.radio("Simulation Mode", ("Real Time", "Back Test")
 if simulation_mode == "Real Time":
     selected_interval = st.sidebar.radio("Select Interval", ("1d", "4h"))
 else:
-    csv_folder = r"app\Interval"
+    csv_folder = "Interval"
     if not os.path.exists(csv_folder):
         os.makedirs(csv_folder)
     csv_files = [f for f in os.listdir(csv_folder) if f.endswith('.csv')]
@@ -118,7 +118,7 @@ else:
         st.stop()
 
 display_mode = st.sidebar.radio("Model Mode", ["Single Model", "All Models"])
-MODEL_FOLDER = r"app\SelectedModel"
+MODEL_FOLDER = "SelectedModel"
 available_models = [f for f in os.listdir(MODEL_FOLDER) if f.endswith('.pkl')]
 if not available_models:
     st.sidebar.error("No .pkl files found in MODEL_FOLDER.")
